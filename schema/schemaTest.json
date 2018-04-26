@@ -1,0 +1,119 @@
+{
+	"swagger": "2.0",
+	"info": {
+	  "version": "v1",
+	  "title": "API Version 1",
+	  "description": "",
+	  "termsOfService": "",
+	  "contact": {
+		"name": "",
+		"url": "",
+		"email": ""
+	  },
+	  "license": {
+		"name": "",
+		"url": ""
+	  }
+	},
+	"host": "localhost",
+	"schemes": [
+	  "http"
+	],
+	"paths": {
+	  "/api/agencies": {
+		"get": {
+		  "tags": [
+			"Agency"
+		  ],
+		  "summary": "Get a list of agency organizations",
+		  "operationId": "getAgencies",
+		  "consumes": [],
+		  "produces": [
+			"application/json",
+			"text/json"
+		  ],
+		  "parameters": [
+			{
+			  "name": "pageSize",
+			  "in": "query",
+			  "description": "",
+			  "required": false,
+			  "type": "integer"
+			},
+			{
+			  "name": "pageNumber",
+			  "in": "query",
+			  "description": "",
+			  "required": false,
+			  "type": "integer"
+			},
+			{
+			  "name": "ids",
+			  "in": "query",
+			  "description": "",
+			  "required": false,
+			  "type": "array",
+			  "items": {
+				"type": "integer"
+			  },
+			  "collectionFormat": "multi"
+			}
+		  ],
+		  "responses": {
+			"200": {
+			  "description": "OK",
+			  "schema": {
+				"type": "array",
+				"items": {
+				  "$ref": "#/definitions/Agency"
+				}
+			  }
+			}
+		  }
+		},
+		"post": {
+		  "tags": [
+			"Agency"
+		  ],
+		  "summary": "Manage access to a specific agency",
+		  "operationId": "postAgencies",
+		  "consumes": [],
+		  "produces": [
+			"application/json",
+			"text/json"
+		  ],
+		  "parameters": [
+			{
+			  "name": "ids",
+			  "in": "query",
+			  "description": "",
+			  "required": false,
+			  "type": "array",
+			  "items": {
+				"type": "integer"
+			  },
+			  "collectionFormat": "multi"
+			},
+			{
+			  "name": "isAccepted",
+			  "in": "query",
+			  "description": "",
+			  "required": false,
+			  "type": "boolean"
+			}
+		  ],
+		  "responses": {
+			"200": {
+			  "description": "OK",
+			  "schema": {
+				"type": "array",
+				"items": {
+				  "$ref": "#/definitions/Agency"
+				}
+			  }
+			}
+		  }
+		}
+	  }
+	}
+  }

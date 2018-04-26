@@ -1,0 +1,9 @@
+{
+  "name": "schema-convert",
+  "version": "0.0.1",
+  "description": "Convert schema to api.js",
+  "main": "index.js",
+  "repository": "https://github.com/mylabc67/schema-convertor.git",
+  "author": "Yilei Mou",
+  "license": "MIT"
+}
