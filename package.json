@@ -1,9 +1,22 @@
 {
-  "name": "schema-convert",
+  "name": "schema-converter",
   "version": "0.0.1",
-  "description": "Convert schema to api.js",
+  "description": "This helper file is used to convert the schema json to endpoint api.js",
   "main": "index.js",
   "repository": "https://github.com/mylabc67/schema-convertor.git",
   "author": "Yilei Mou",
-  "license": "MIT"
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "child_process": "^1.0.2",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.0",
+    "https": "^1.0.0",
+    "lodash": "^4.17.10",
+    "swagger-parser": "^4.1.0",
+    "swagger-tools": "^0.10.3",
+    "url": "^0.11.0",
+    "util": "^0.10.3"
+  }
 }

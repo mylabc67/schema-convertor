@@ -7,7 +7,7 @@ const util = require('util');
 const exec = util.promisify(require('child_process').exec);
 const swaggerParser = require('swagger-parser');
 const swaggerTools = require('swagger-tools').specs.v2; // Validate using the latest Swagger 2.x specification
-const Logger = require('../logger');
+const Logger = require('./logger');
 const log = Logger('GetSchemaApiPlugin');
 const LINE_BREAK = '\n';
 
